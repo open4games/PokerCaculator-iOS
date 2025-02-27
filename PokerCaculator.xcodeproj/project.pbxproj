@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44AE1A7890B545F36C91B9E1 /* Pods_PokerCaculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D304A5CE4FBCE4349FF9440 /* Pods_PokerCaculator.framework */; };
+		85D4091B2D6DBDEE00916A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409112D6DBDEE00916A62 /* AppDelegate.swift */; };
+		85D4091C2D6DBDEE00916A62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409182D6DBDEE00916A62 /* SceneDelegate.swift */; };
+		85D4091D2D6DBDEE00916A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409192D6DBDEE00916A62 /* ViewController.swift */; };
+		85D4091E2D6DBDEE00916A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D409122D6DBDEE00916A62 /* Assets.xcassets */; };
+		85D409202D6DBDEE00916A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D409152D6DBDEE00916A62 /* LaunchScreen.storyboard */; };
+		85D409212D6DBDEE00916A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D409172D6DBDEE00916A62 /* Main.storyboard */; };
+		85D409332D6EC0AF00916A62 /* BaseTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4092F2D6EC0AF00916A62 /* BaseTableViewCellModel.swift */; };
+		85D409342D6EC0AF00916A62 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4092E2D6EC0AF00916A62 /* BaseTableViewCell.swift */; };
+		85D409352D6EC0AF00916A62 /* BaseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409302D6EC0AF00916A62 /* BaseTableViewModel.swift */; };
+		85D409362D6EC0AF00916A62 /* BaseTableViewSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409312D6EC0AF00916A62 /* BaseTableViewSectionModel.swift */; };
+		85D4093B2D6EC22D00916A62 /* CaculateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4093A2D6EC22D00916A62 /* CaculateType.swift */; };
+		85D409432D6EC79E00916A62 /* CaculateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409422D6EC79E00916A62 /* CaculateCell.swift */; };
+		85D409452D6EC7B800916A62 /* CaculateCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409442D6EC7B800916A62 /* CaculateCellModel.swift */; };
+		85D4094E2D6EC80D00916A62 /* BaseCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4094A2D6EC80D00916A62 /* BaseCollectionViewCellModel.swift */; };
+		85D4094F2D6EC80D00916A62 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409492D6EC80D00916A62 /* BaseCollectionViewCell.swift */; };
+		85D409502D6EC80D00916A62 /* ScaleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409462D6EC80D00916A62 /* ScaleFlowLayout.swift */; };
+		85D409512D6EC80D00916A62 /* BaseCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4094B2D6EC80D00916A62 /* BaseCollectionViewModel.swift */; };
+		85D409522D6EC80D00916A62 /* BaseCollectionSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409482D6EC80D00916A62 /* BaseCollectionSectionModel.swift */; };
+		85D409532D6EC80D00916A62 /* LeftAlignedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4094C2D6EC80D00916A62 /* LeftAlignedCollectionViewLayout.swift */; };
+		85D409552D6EC83600916A62 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409542D6EC83600916A62 /* CardCell.swift */; };
+		85D409572D6EC84A00916A62 /* CardCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409562D6EC84A00916A62 /* CardCellModel.swift */; };
+		85D409592D6ECA2E00916A62 /* CardSuitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409582D6ECA2E00916A62 /* CardSuitType.swift */; };
+		85D4095B2D6ECB8900916A62 /* CardValueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4095A2D6ECB8900916A62 /* CardValueType.swift */; };
+		85D4095E2D6ECBD800916A62 /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D4095D2D6ECBD800916A62 /* CardStruct.swift */; };
+		85D409612D6EF53700916A62 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409602D6EF53700916A62 /* Const.swift */; };
+		85D409632D6EF85000916A62 /* CardTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409622D6EF85000916A62 /* CardTableViewModel.swift */; };
+		85D409652D6EF89A00916A62 /* CardCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409642D6EF89A00916A62 /* CardCollectionViewModel.swift */; };
+		85D409682D6EFA3900916A62 /* CardSelectedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409672D6EFA3900916A62 /* CardSelectedViews.swift */; };
+		85D4096A2D6F19A900916A62 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409692D6F19A900916A62 /* Layout.swift */; };
+		85D409712D6F1BB100916A62 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409702D6F1BB100916A62 /* SettingsCell.swift */; };
+		85D409732D6F1BC300916A62 /* SettingsCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409722D6F1BC300916A62 /* SettingsCellModel.swift */; };
+		85D409762D6F1BDE00916A62 /* SettingsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409752D6F1BDE00916A62 /* SettingsType.swift */; };
+		85D409782D6F202100916A62 /* SelectedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D409772D6F202100916A62 /* SelectedCardViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		749D1CE61E0CF5057A7047F1 /* Pods-PokerCaculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerCaculator.release.xcconfig"; path = "Target Support Files/Pods-PokerCaculator/Pods-PokerCaculator.release.xcconfig"; sourceTree = "<group>"; };
+		7D304A5CE4FBCE4349FF9440 /* Pods_PokerCaculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerCaculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D408F92D6DBDE200916A62 /* PokerCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D409112D6DBDEE00916A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85D409122D6DBDEE00916A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85D409132D6DBDEE00916A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D409142D6DBDEE00916A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85D409162D6DBDEE00916A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85D409182D6DBDEE00916A62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		85D409192D6DBDEE00916A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85D4092E2D6EC0AF00916A62 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		85D4092F2D6EC0AF00916A62 /* BaseTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellModel.swift; sourceTree = "<group>"; };
+		85D409302D6EC0AF00916A62 /* BaseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewModel.swift; sourceTree = "<group>"; };
+		85D409312D6EC0AF00916A62 /* BaseTableViewSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewSectionModel.swift; sourceTree = "<group>"; };
+		85D4093A2D6EC22D00916A62 /* CaculateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateType.swift; sourceTree = "<group>"; };
+		85D409422D6EC79E00916A62 /* CaculateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateCell.swift; sourceTree = "<group>"; };
+		85D409442D6EC7B800916A62 /* CaculateCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculateCellModel.swift; sourceTree = "<group>"; };
+		85D409462D6EC80D00916A62 /* ScaleFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleFlowLayout.swift; sourceTree = "<group>"; };
+		85D409482D6EC80D00916A62 /* BaseCollectionSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionSectionModel.swift; sourceTree = "<group>"; };
+		85D409492D6EC80D00916A62 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		85D4094A2D6EC80D00916A62 /* BaseCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCellModel.swift; sourceTree = "<group>"; };
+		85D4094B2D6EC80D00916A62 /* BaseCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewModel.swift; sourceTree = "<group>"; };
+		85D4094C2D6EC80D00916A62 /* LeftAlignedCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		85D409542D6EC83600916A62 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		85D409562D6EC84A00916A62 /* CardCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellModel.swift; sourceTree = "<group>"; };
+		85D409582D6ECA2E00916A62 /* CardSuitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuitType.swift; sourceTree = "<group>"; };
+		85D4095A2D6ECB8900916A62 /* CardValueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardValueType.swift; sourceTree = "<group>"; };
+		85D4095D2D6ECBD800916A62 /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
+		85D409602D6EF53700916A62 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		85D409622D6EF85000916A62 /* CardTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewModel.swift; sourceTree = "<group>"; };
+		85D409642D6EF89A00916A62 /* CardCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewModel.swift; sourceTree = "<group>"; };
+		85D409672D6EFA3900916A62 /* CardSelectedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectedViews.swift; sourceTree = "<group>"; };
+		85D409692D6F19A900916A62 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		85D409702D6F1BB100916A62 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		85D409722D6F1BC300916A62 /* SettingsCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellModel.swift; sourceTree = "<group>"; };
+		85D409752D6F1BDE00916A62 /* SettingsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsType.swift; sourceTree = "<group>"; };
+		85D409772D6F202100916A62 /* SelectedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCardViewModel.swift; sourceTree = "<group>"; };
+		B49AFEAF664B4A4061EE1B43 /* Pods-PokerCaculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerCaculator.debug.xcconfig"; path = "Target Support Files/Pods-PokerCaculator/Pods-PokerCaculator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85D408F62D6DBDE200916A62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AE1A7890B545F36C91B9E1 /* Pods_PokerCaculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85D408F02D6DBDE200916A62 = {
+			isa = PBXGroup;
+			children = (
+				85D4091A2D6DBDEE00916A62 /* PokerCaculator */,
+				85D408FA2D6DBDE200916A62 /* Products */,
+				9D5BA75E5C1AA4BEBABFDD29 /* Pods */,
+				FA88334936ED2C664A3C9D45 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85D408FA2D6DBDE200916A62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85D408F92D6DBDE200916A62 /* PokerCaculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85D4091A2D6DBDEE00916A62 /* PokerCaculator */ = {
+			isa = PBXGroup;
+			children = (
+				85D4096B2D6F1B6F00916A62 /* Settings */,
+				85D4095F2D6EF51E00916A62 /* Constant */,
+				85D4094D2D6EC80D00916A62 /* CollectionView */,
+				85D4093C2D6EC74100916A62 /* MainPage */,
+				85D409322D6EC0AF00916A62 /* TableViewComponent */,
+				85D409112D6DBDEE00916A62 /* AppDelegate.swift */,
+				85D409122D6DBDEE00916A62 /* Assets.xcassets */,
+				85D409132D6DBDEE00916A62 /* Info.plist */,
+				85D409152D6DBDEE00916A62 /* LaunchScreen.storyboard */,
+				85D409172D6DBDEE00916A62 /* Main.storyboard */,
+				85D409182D6DBDEE00916A62 /* SceneDelegate.swift */,
+			);
+			path = PokerCaculator;
+			sourceTree = "<group>";
+		};
+		85D409322D6EC0AF00916A62 /* TableViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				85D4092E2D6EC0AF00916A62 /* BaseTableViewCell.swift */,
+				85D4092F2D6EC0AF00916A62 /* BaseTableViewCellModel.swift */,
+				85D409302D6EC0AF00916A62 /* BaseTableViewModel.swift */,
+				85D409312D6EC0AF00916A62 /* BaseTableViewSectionModel.swift */,
+			);
+			path = TableViewComponent;
+			sourceTree = "<group>";
+		};
+		85D4093C2D6EC74100916A62 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				85D409662D6EF8D000916A62 /* Controller */,
+				85D4095C2D6ECBC400916A62 /* Structs */,
+				85D4093F2D6EC75400916A62 /* Enums */,
+				85D4093E2D6EC74F00916A62 /* Models */,
+				85D4093D2D6EC74900916A62 /* Views */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		85D4093D2D6EC74900916A62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85D409402D6EC75F00916A62 /* Cell */,
+				85D409672D6EFA3900916A62 /* CardSelectedViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85D4093E2D6EC74F00916A62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85D409442D6EC7B800916A62 /* CaculateCellModel.swift */,
+				85D409562D6EC84A00916A62 /* CardCellModel.swift */,
+				85D409622D6EF85000916A62 /* CardTableViewModel.swift */,
+				85D409642D6EF89A00916A62 /* CardCollectionViewModel.swift */,
+				85D409772D6F202100916A62 /* SelectedCardViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		85D4093F2D6EC75400916A62 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				85D4093A2D6EC22D00916A62 /* CaculateType.swift */,
+				85D409582D6ECA2E00916A62 /* CardSuitType.swift */,
+				85D4095A2D6ECB8900916A62 /* CardValueType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		85D409402D6EC75F00916A62 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				85D409422D6EC79E00916A62 /* CaculateCell.swift */,
+				85D409542D6EC83600916A62 /* CardCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		85D409472D6EC80D00916A62 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				85D409462D6EC80D00916A62 /* ScaleFlowLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		85D4094D2D6EC80D00916A62 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				85D409472D6EC80D00916A62 /* Layout */,
+				85D409482D6EC80D00916A62 /* BaseCollectionSectionModel.swift */,
+				85D409492D6EC80D00916A62 /* BaseCollectionViewCell.swift */,
+				85D4094A2D6EC80D00916A62 /* BaseCollectionViewCellModel.swift */,
+				85D4094B2D6EC80D00916A62 /* BaseCollectionViewModel.swift */,
+				85D4094C2D6EC80D00916A62 /* LeftAlignedCollectionViewLayout.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		85D4095C2D6ECBC400916A62 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				85D4095D2D6ECBD800916A62 /* CardStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		85D4095F2D6EF51E00916A62 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				85D409602D6EF53700916A62 /* Const.swift */,
+				85D409692D6F19A900916A62 /* Layout.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		85D409662D6EF8D000916A62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				85D409192D6DBDEE00916A62 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85D4096B2D6F1B6F00916A62 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				85D409742D6F1BC600916A62 /* Enums */,
+				85D4096E2D6F1B8A00916A62 /* Models */,
+				85D4096D2D6F1B8300916A62 /* Views */,
+				85D4096C2D6F1B7C00916A62 /* Controller */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		85D4096C2D6F1B7C00916A62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85D4096D2D6F1B8300916A62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85D4096F2D6F1B9500916A62 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		85D4096E2D6F1B8A00916A62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85D409722D6F1BC300916A62 /* SettingsCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		85D4096F2D6F1B9500916A62 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				85D409702D6F1BB100916A62 /* SettingsCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		85D409742D6F1BC600916A62 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				85D409752D6F1BDE00916A62 /* SettingsType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9D5BA75E5C1AA4BEBABFDD29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B49AFEAF664B4A4061EE1B43 /* Pods-PokerCaculator.debug.xcconfig */,
+				749D1CE61E0CF5057A7047F1 /* Pods-PokerCaculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA88334936ED2C664A3C9D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D304A5CE4FBCE4349FF9440 /* Pods_PokerCaculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85D408F82D6DBDE200916A62 /* PokerCaculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D4090C2D6DBDE400916A62 /* Build configuration list for PBXNativeTarget "PokerCaculator" */;
+			buildPhases = (
+				568EB9A716CFEEAF2342DC59 /* [CP] Check Pods Manifest.lock */,
+				85D408F52D6DBDE200916A62 /* Sources */,
+				85D408F62D6DBDE200916A62 /* Frameworks */,
+				85D408F72D6DBDE200916A62 /* Resources */,
+				F893F03C41F7AE3DA79397F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokerCaculator;
+			productName = PokerCaculator;
+			productReference = 85D408F92D6DBDE200916A62 /* PokerCaculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85D408F12D6DBDE200916A62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					85D408F82D6DBDE200916A62 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 85D408F42D6DBDE200916A62 /* Build configuration list for PBXProject "PokerCaculator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85D408F02D6DBDE200916A62;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 85D408FA2D6DBDE200916A62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85D408F82D6DBDE200916A62 /* PokerCaculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85D408F72D6DBDE200916A62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D4091E2D6DBDEE00916A62 /* Assets.xcassets in Resources */,
+				85D409202D6DBDEE00916A62 /* LaunchScreen.storyboard in Resources */,
+				85D409212D6DBDEE00916A62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		568EB9A716CFEEAF2342DC59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerCaculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F893F03C41F7AE3DA79397F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerCaculator/Pods-PokerCaculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerCaculator/Pods-PokerCaculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokerCaculator/Pods-PokerCaculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85D408F52D6DBDE200916A62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D409432D6EC79E00916A62 /* CaculateCell.swift in Sources */,
+				85D4093B2D6EC22D00916A62 /* CaculateType.swift in Sources */,
+				85D409452D6EC7B800916A62 /* CaculateCellModel.swift in Sources */,
+				85D4095E2D6ECBD800916A62 /* CardStruct.swift in Sources */,
+				85D4091B2D6DBDEE00916A62 /* AppDelegate.swift in Sources */,
+				85D4096A2D6F19A900916A62 /* Layout.swift in Sources */,
+				85D4091C2D6DBDEE00916A62 /* SceneDelegate.swift in Sources */,
+				85D409762D6F1BDE00916A62 /* SettingsType.swift in Sources */,
+				85D409572D6EC84A00916A62 /* CardCellModel.swift in Sources */,
+				85D409682D6EFA3900916A62 /* CardSelectedViews.swift in Sources */,
+				85D4091D2D6DBDEE00916A62 /* ViewController.swift in Sources */,
+				85D409332D6EC0AF00916A62 /* BaseTableViewCellModel.swift in Sources */,
+				85D409342D6EC0AF00916A62 /* BaseTableViewCell.swift in Sources */,
+				85D409652D6EF89A00916A62 /* CardCollectionViewModel.swift in Sources */,
+				85D409352D6EC0AF00916A62 /* BaseTableViewModel.swift in Sources */,
+				85D409592D6ECA2E00916A62 /* CardSuitType.swift in Sources */,
+				85D4095B2D6ECB8900916A62 /* CardValueType.swift in Sources */,
+				85D409632D6EF85000916A62 /* CardTableViewModel.swift in Sources */,
+				85D409552D6EC83600916A62 /* CardCell.swift in Sources */,
+				85D4094E2D6EC80D00916A62 /* BaseCollectionViewCellModel.swift in Sources */,
+				85D4094F2D6EC80D00916A62 /* BaseCollectionViewCell.swift in Sources */,
+				85D409732D6F1BC300916A62 /* SettingsCellModel.swift in Sources */,
+				85D409712D6F1BB100916A62 /* SettingsCell.swift in Sources */,
+				85D409782D6F202100916A62 /* SelectedCardViewModel.swift in Sources */,
+				85D409502D6EC80D00916A62 /* ScaleFlowLayout.swift in Sources */,
+				85D409512D6EC80D00916A62 /* BaseCollectionViewModel.swift in Sources */,
+				85D409522D6EC80D00916A62 /* BaseCollectionSectionModel.swift in Sources */,
+				85D409532D6EC80D00916A62 /* LeftAlignedCollectionViewLayout.swift in Sources */,
+				85D409362D6EC0AF00916A62 /* BaseTableViewSectionModel.swift in Sources */,
+				85D409612D6EF53700916A62 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85D409152D6DBDEE00916A62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D409142D6DBDEE00916A62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		85D409172D6DBDEE00916A62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85D409162D6DBDEE00916A62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85D4090D2D6DBDE400916A62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49AFEAF664B4A4061EE1B43 /* Pods-PokerCaculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQY68K4SVM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokerCaculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ltd.upgames.pokercaculator.PokerCaculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85D4090E2D6DBDE400916A62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 749D1CE61E0CF5057A7047F1 /* Pods-PokerCaculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SQY68K4SVM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokerCaculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ltd.upgames.pokercaculator.PokerCaculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85D4090F2D6DBDE400916A62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85D409102D6DBDE400916A62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85D408F42D6DBDE200916A62 /* Build configuration list for PBXProject "PokerCaculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D4090F2D6DBDE400916A62 /* Debug */,
+				85D409102D6DBDE400916A62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D4090C2D6DBDE400916A62 /* Build configuration list for PBXNativeTarget "PokerCaculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D4090D2D6DBDE400916A62 /* Debug */,
+				85D4090E2D6DBDE400916A62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85D408F12D6DBDE200916A62 /* Project object */;
+}

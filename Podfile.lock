@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (5.10.1)
+  - DeviceKit (5.5.0)
+  - HandyJSON (5.0.2)
+  - Kingfisher (8.1.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - ProgressHUD (14.1.1)
+  - RxSwift (6.8.0)
+  - SnapKit (5.7.1)
+  - SwiftLint (0.57.0)
+  - SwiftyBeaver (1.9.5)
+  - Toast-Swift (5.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - DeviceKit
+  - HandyJSON
+  - Kingfisher
+  - Moya
+  - ProgressHUD
+  - RxSwift
+  - SnapKit
+  - SwiftLint
+  - SwiftyBeaver
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DeviceKit
+    - HandyJSON
+    - Kingfisher
+    - Moya
+    - ProgressHUD
+    - RxSwift
+    - SnapKit
+    - SwiftLint
+    - SwiftyBeaver
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  DeviceKit: d83e38ca196a4ebf0cc5f37d6f0316a24b794d5b
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: dfbf20b6249ed4ef6f18d6a96c847bce860bdb95
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ProgressHUD: abb9136ae23c85204236828562cb9a8ec98efb44
+  RxSwift: 4e28be97cbcfeee614af26d83415febbf2bf6f45
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SwiftLint: eb47480d47c982481592c195c221d11013a679cc
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
+
+PODFILE CHECKSUM: d700f1509741ea462fe23435b603db47ef762d26
+
+COCOAPODS: 1.16.2
