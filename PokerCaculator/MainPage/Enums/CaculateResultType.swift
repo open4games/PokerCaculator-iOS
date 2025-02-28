@@ -7,20 +7,32 @@
 
 import Foundation
 
-enum CaculateType {
+// MARK: - 牌型的类型
+enum CaculateResultType {
+    /// 皇家同花顺：同一花色的10、J、Q、K、A
     case royalFlush
+    /// 同花顺：同一花色的连续五张牌
     case straightFlush
+    /// 四条：四张相同点数的牌
     case fourOfAKind
+    /// 葫芦：三张相同点数的牌+一对
     case fullHouse
+    /// 同花：五张相同花色的牌
     case flush
+    /// 顺子：五张连续点数的牌
     case straight
+    /// 三条：三张相同点数的牌
     case threeOfAKind
+    /// 两对：两个对子
     case twoPairs
+    /// 对子：一对相同点数的牌
     case pair
+    /// 高牌：不符合以上任何牌型的牌
     case highCard
+    /// 胜率
     case win
+    /// 平局率
     case tie
-    case player
     
     var info: CaculateInfo? {
         var title = ""
@@ -49,8 +61,6 @@ enum CaculateType {
             title = "Win"
         case .tie:
             title = "Tie"
-        case .player:
-            title = "Player"
         }
         
         return CaculateInfo(title: title)

@@ -8,6 +8,8 @@
 import UIKit
 
 class CaculateCell: BaseTableViewCell {
+    
+    var updatePlayerCountCallback:((_ count: UInt) -> Void)?
 
     override func setupViews() {
         self.backgroundColor = kMainGreenColor

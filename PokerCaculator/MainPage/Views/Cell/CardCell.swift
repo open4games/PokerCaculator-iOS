@@ -26,16 +26,15 @@ class CardCell: BaseCollectionViewCell {
         if model.card == nil {
             self.backgroundColor = .systemGray2
         } else {
-            if model.isInSelectionView {
-                self.backgroundColor = UIColor.white
-            } else {
+            if model.viewModel is CardCollectionViewModel {
                 if model.isSelected {
                     self.backgroundColor = UIColor.lightGray
                 } else {
                     self.backgroundColor = UIColor.white
                 }
+            } else {
+                self.backgroundColor = UIColor.white
             }
-            
         }
     }
     

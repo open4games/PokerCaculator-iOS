@@ -68,10 +68,29 @@ class CardSelectedViews: UIView {
         self.updatePubTitle()
     }
     
+    func getPubCards() -> [CardStruct] {
+        var result: [CardStruct] = []
+        for pubCardCellModel in pubCardCellModels {
+            if let card = pubCardCellModel.card {
+                result.append(card)
+            }
+        }
+        return result
+    }
+    
+    func getHandCards() -> [CardStruct] {
+        var result: [CardStruct] = []
+        for pubCardCellModel in handCardCellModels {
+            if let card = pubCardCellModel.card {
+                result.append(card)
+            }
+        }
+        return result
+    }
+    
     func addCardAction(model: CardCellModel) -> Bool {
         // 打印当前状态，用于调试
         print("当前手牌数量: \(self.handCardCellModels.count), 公共牌数量: \(self.pubCardCellModels.count)")
-        model.isInSelectionView = true
         if self.handCardCellModels.count < 2 {
             // 如果hand区域还没满，添加到hand
             self.handCardCellModels.append(model)
@@ -92,18 +111,15 @@ class CardSelectedViews: UIView {
             print("添加到公共牌后，公共牌数量: \(self.pubCardCellModels.count)")
             return true
         }
-        // 如果hand和pub都满了，返回失败
         print("手牌和公共牌都已满")
         return false
     }
     
     func removeCardAction(model: CardCellModel) {
-        // 打印当前状态
         print("移除前 - 手牌数量: \(self.handCardCellModels.count), 公共牌数量: \(self.pubCardCellModels.count)")
         
         var removed = false
         
-        // 从手牌中查找并移除
         if let index = self.handCardCellModels.firstIndex(where: { $0 === model }) {
             self.handCardCellModels.remove(at: index)
             let sectionModel = BaseCollectionSectionModel()
@@ -111,11 +127,9 @@ class CardSelectedViews: UIView {
             self.handCarsViewModel.sectionModels = [sectionModel]
             self.handCarsViewModel.reloadData()
             removed = true
-            model.isInSelectionView = false
             print("从手牌中移除了一张牌")
         }
         
-        // 从公共牌中查找并移除
         if let index = self.pubCardCellModels.firstIndex(where: { $0 === model }) {
             self.pubCardCellModels.remove(at: index)
             let sectionModel = BaseCollectionSectionModel()
@@ -123,7 +137,6 @@ class CardSelectedViews: UIView {
             self.pubCardsViewModel.sectionModels = [sectionModel]
             self.pubCardsViewModel.reloadData()
             removed = true
-            model.isInSelectionView = false
             print("从公共牌中移除了一张牌")
             self.updatePubTitle()
         }
@@ -132,39 +145,33 @@ class CardSelectedViews: UIView {
             print("警告：未找到要移除的牌")
         }
         
-        // 打印移除后的状态
         print("移除后 - 手牌数量: \(self.handCardCellModels.count), 公共牌数量: \(self.pubCardCellModels.count)")
     }
     
     // 清空所有选中的牌
-    func clearAllCards() {
-        // 清空手牌数组
+    func resetAction() {
         self.handCardCellModels.removeAll()
         
-        // 清空公共牌数组
         self.pubCardCellModels.removeAll()
         
-        // 更新手牌UI
         let handSectionModel = BaseCollectionSectionModel()
         handSectionModel.cellModels = [CardCellModel(card: nil), CardCellModel(card: nil)]
         self.handCarsViewModel.sectionModels = [handSectionModel]
         self.handCarsViewModel.reloadData()
         
-        // 更新公共牌UI
         let pubSectionModel = BaseCollectionSectionModel()
         pubSectionModel.cellModels = [CardCellModel(card: nil), CardCellModel(card: nil), CardCellModel(card: nil), CardCellModel(card: nil), CardCellModel(card: nil)]
         self.pubCardsViewModel.sectionModels = [pubSectionModel]
         self.pubCardsViewModel.reloadData()
         self.updatePubTitle()
-        print("已清空所有选中的牌")
     }
     
     private func updatePubTitle() {
         var title = "Pre-flop"
         let pubCount = self.pubCardCellModels.count
-        if pubCount < 1 {
+        if pubCount > 0 && pubCount <= 2 {
             title = "Flop"
-        } else if pubCount < 4 {
+        } else if pubCount == 3 {
             title = "Turn"
         } else if pubCount == 4 {
             title = "River"

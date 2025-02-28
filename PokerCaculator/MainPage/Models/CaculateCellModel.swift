@@ -9,7 +9,7 @@ import UIKit
 
 class CaculateCellModel: BaseTableViewCellModel {
     
-    var caculateType: CaculateType?
+    var caculateType: CaculateResultType?
     
     override var cellType: AnyClass {
         return CaculateCell.self
@@ -23,11 +23,14 @@ class CaculateCellModel: BaseTableViewCellModel {
         return self.caculateType?.info?.title
     }()
     
-    lazy var value: String? = {
-        return ""
-    }()
+    var value: String? {
+        return String(format: "%.2f%%", self.caculatedRate)
+    }
     
-    init(caculateType: CaculateType) {
+    /// 计算的概率
+    var caculatedRate: Double = 0
+    
+    init(caculateType: CaculateResultType) {
         self.caculateType = caculateType
     }
 

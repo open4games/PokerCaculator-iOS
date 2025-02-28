@@ -1,5 +1,5 @@
 //
-//  CardValueType.swift
+//  CardRankType.swift
 //  PokerCaculator
 //
 //  Created by Hsiao on 2025/2/26.
@@ -8,9 +8,7 @@
 import Foundation
 
 /// 点数枚举（含数值映射）
-enum CardValueType: Int, CaseIterable {
-    /// A
-    case ace = 1
+enum CardRankType: Int, CaseIterable {
     /// 2
     case two = 2
     /// 3
@@ -35,6 +33,8 @@ enum CardValueType: Int, CaseIterable {
     case queen = 12
     /// K
     case king = 13
+    /// A
+    case ace = 14
     
     var displayName: String {
         switch self {

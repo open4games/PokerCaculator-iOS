@@ -22,3 +22,5 @@ let kCardWidth = (kScreenWidth - kTotalMarginH) / 13
 let kCardHeight = kCardWidth * kCardHeightWidthRatio
 /// 整个控件的高度
 let kCardTotalHeight = kCardHeight * 4 + kCardMargin * 5
+
+let kMainGreenColor = UIColor(red: 55/255, green: 92/255, blue: 56/255, alpha: 1.0)

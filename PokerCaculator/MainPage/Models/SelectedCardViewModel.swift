@@ -38,10 +38,7 @@ class SelectedCardViewModel: BaseCollectionViewModel {
             let model5 = CardCellModel(card: nil)
             sectionModel.cellModels = [model1, model2, model3, model4, model5]
         }
-        
-        sectionModel.cellModels.forEach {
-            ($0 as? CardCellModel)?.isInSelectionView = true
-        }
+
         self.sectionModels = [sectionModel]
     }
 
